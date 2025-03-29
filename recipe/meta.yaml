@@ -12,7 +12,7 @@ build:
   entry_points:
     - maison = maison.__main__:main
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
