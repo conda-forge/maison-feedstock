@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.0.2" %}
 
 package:
   name: maison
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/maison/maison-{{ version }}.tar.gz
-  sha256: f5dafbbf4ce57bdb7cae128e075f457434b2cc9573b4f4bb4535f16d2ebd1cc5
+  sha256: 476f2bf414a20f5abf5a9856bd4db78b5a33c695654a0fc49c3c4abed78c2efc
 
 build:
   entry_points:
     - maison = maison.__main__:main
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
